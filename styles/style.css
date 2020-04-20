@@ -87,15 +87,15 @@ body{
   padding: 40px;
   background: #fff;
   color: #717171;
-  border-bottom: 1px solid #e0e4e8;
+  border-bottom: 4px solid #e0e4e8;
 }
 
 .wrapper .main_content .info{
-  margin: 20px;
+  margin: 30px;
   color: #717171;
   line-height: 25px;
 }
 
-.wrapper .main_content .info div{
-  margin-bottom: 20px;
+.wrapper .main_content .info p{
+  text-align: justify;
 }
