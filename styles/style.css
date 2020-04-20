@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
+.about{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.about div {
+	flex: 16.875em;
+	margin: 20px;
+	align-self: center;
+}
+
+.about p{
+	text-align: justify;
+}
+
+.about img {
+	flex: 0 1 auto;
+	margin-left: 5%;
+}
+
 *{
   margin: 0;
   padding: 0;
