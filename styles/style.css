@@ -18,16 +18,9 @@ body {
 	height: 100%;
 }
 
-/*add gradient to all - header, main and footer */
-main {
-	width:100%
-	margin-left: 200px;
-	background: linear-gradient(to bottom, #c9cc9f 0%,#f0f3bd 20%,#f0f3bd 80%,#c9cc9f 100%);
-}
 
-header{
-	background: linear-gradient(to bottom, #03374c 0%,#044a66 25%,#05668d 100%);
-}
+
+
 
 p, li {
 	color: #05668d;
