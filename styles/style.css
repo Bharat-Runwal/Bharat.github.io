@@ -1,145 +1,101 @@
-html {
-        margin: 0;
-        padding:0;
-        height: 100%;
-}
-html *{
-       max-height: 9999999px;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body{
-        font-family: 'Open Sans', sans-serif;
-        margin:0;
-        padding:0;
-        height:100%;
-}
-main {
-	background: linear-gradient(to bottom, #c9cc9f 0%,#f0f3bd 20%,#f0f3bd 80%,#c9cc9f 100%);
+   background-color: #f3f5f9;
 }
 
-header, footer {
-	background: linear-gradient(to bottom, #03374c 0%,#044a66 25%,#05668d 100%);
+.wrapper{
+  display: flex;
+  position: relative;
 }
 
-p, li {
-	color: #05668d;
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #4b4276;
+  padding: 30px 0px;
+  position: fixed;
 }
 
-header h1 {
-	text-align: center;
-	margin: 0;
-	padding: 1em 0 1em 0;
-	color: #f0f3bd; 
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-h1 {
-	text-align: center;
-	margin: 1em;
-	color: #05668d;
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
 }
 
-h2 {
-	color: #05668d;
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
 }
 
-/* links will display highlighted when hovered or activated*/
-.link {
-	color: #00a896;
+.wrapper .sidebar ul li:hover{
+  background-color: #594f8d;
 }
-.link:hover {
-	background: #00a896;
-	color: #f0f3bd;
-	text-decoration: none;
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
 }
-
-.flexed {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
-code {
-	background-color: black;
-	color: lime;
-	margin: 1em;
-	padding: 0.25em;
-	border: 0.1em solid lime;
-	border-radius: 0.3em;
-
-}	
-
-
-
-
-header nav {
-	padding: 0.3em 0 0.6em 0;
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 }
 
-/*navbar uses flexbox to keep menu items in one row and centers them */
-header nav ul {
-	display: flex;
-	justify-content: center;
-	list-style-type: none;
-	flex-flow: row wrap;
-
-	margin: 0;
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-header nav ul li a, .current{
-	/*display set to inline-block to allow for resizing and padding */
-	display: inline-block;
-	border: 0.1em solid black;
-	border-radius: 0.3em;
-	color: black;
-	text-decoration: none;
-	padding: 5px;
-	margin: 5px;
-
-	background-color: #f0f3bd;
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
 }
 
-/*box-shadow effect is used to create button press effect on menu items*/
-header nav ul li a {
-	box-shadow: 0.2em 0.2em 0 #7e7f63;
-}
-header nav ul li a:hover{
-	background-color: #a3a581;
-	box-shadow: inset 0.2em 0.2em 0 #7e7f63;
-}
-header nav ul .current {
-	background-color: #a3a581;
-	box-shadow: inset 0.2em 0.2em 0 #7e7f63;
-}
-header nav ul .current:hover {
-	box-shadow: inset 0.3em 0.3em 0 #7e7f63;
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
 }
 
-footer p {
-	margin: 0;
-	color: #f0f3bd;
-	text-align: center;
-	font-size: 0.5em;
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
 }
 
-/* styling for projects, games and philosophy page "Post" below */
-.post {
-	margin: 0 5% 0 5%;
-	padding: 1em;
-}
-
-button {
-	border: 0.1em solid black;
-	border-radius: 0.3em;
-	color: black;
-	text-decoration: none;
-	padding: 5px;
-	margin: 5px;
-	background-color: #f0f3bd;
-	font-size: 1em;
-
-	box-shadow: 0.2em 0.2em 0 #7e7f63;
-}
-
-button:hover {
-	box-shadow: inset 0.2em 0.2em 0 #7e7f63;
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
 }
