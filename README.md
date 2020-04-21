@@ -1,4 +1,4 @@
-# BR-19.githhub.io
+# Bharat-Runwal.github.io
 Personal Website
 
 Contains introduction ,my hobbies and interests ,projects etc. 
