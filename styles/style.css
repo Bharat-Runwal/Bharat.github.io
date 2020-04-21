@@ -134,7 +134,7 @@ display: flex;
 }
 .wrapper .contents h1{
 margin: 5px 10px;
-color:;
+
 display: flex;
   flex-flow: row wrap;
 }
