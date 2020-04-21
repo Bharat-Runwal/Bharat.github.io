@@ -63,12 +63,20 @@ html * {
  
 .wrapper .sidebar .social_media{
   position: relative;
-  bottom: -300px;
+  bottom: -230px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
 }
-
+.wrapper .sidebar .PER{
+  color:#fff;
+  margin-left: 5px;
+    position: relative;
+  bottom: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
 .wrapper .sidebar .social_media a{
   display: block;
   width: 40px;
@@ -106,10 +114,26 @@ display: flex;
 	justify-content: center;
 }
 
+.wrapper .contents .About img{
+flex: 0 1 auto;
+  margin-left: 5%;
+}
+
+
+
+
 .wrapper .contents .About div{
 flex: 16.875em;
 	align-self: center;
 }
+
+.wrapper .contents .p1{
+margin: 20px 2px;
+display: flex;
+  flex-flow: row wrap;
+}
+
+
 .wrapper .contents h2{
 	color: #006699;
 margin: 10px 10px;
@@ -130,4 +154,7 @@ margin: 10px 10px;
 }
 .wrapper .contents .About div{
 	margin-bottom: 20px;
+}
+.wrapper .contents .p1 div{
+  margin-bottom: 20px;
 }
