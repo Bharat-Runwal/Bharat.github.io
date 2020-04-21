@@ -132,7 +132,12 @@ margin: 20px 2px;
 display: flex;
   flex-flow: row wrap;
 }
-
+.wrapper .contents h1{
+margin: 5px 10px;
+color:;
+display: flex;
+  flex-flow: row wrap;
+}
 
 .wrapper .contents h2{
 	color: #006699;
@@ -140,7 +145,7 @@ margin: 10px 10px;
 }
 .wrapper .contents p{
 		text-align: justify;
-		line-height: 20px;
+		line-height: 25px;
 		padding: 10px 10px;
 		font-size: 20px;
 }
@@ -150,7 +155,7 @@ margin: 10px 10px;
 	list-style-type: disc;
 	padding: 5px 20px;
 	margin: 0px 1px;
-	line-height: 20px;
+	line-height: 25px;
 }
 .wrapper .contents .About div{
 	margin-bottom: 20px;
