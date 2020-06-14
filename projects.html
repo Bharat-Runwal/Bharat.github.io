@@ -5,7 +5,7 @@
       <meta name="author" content="Bharat Runwal" />
       <meta name="description" content="Website of Bharat Runwal">
                 <link rel="shortcut icon" type="image/png" href="images/download.png">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="Viewport" content="width=device-width, initial-scale=1.0">
       <link href="styles/resolution.css" rel="stylesheet">
       <link href="styles/style.css" rel="stylesheet">
     <link href="styles/styleb.css" rel="stylesheet">
@@ -36,51 +36,66 @@
     </div>
           <div class="contents">
                 <div class="header">Projects</div>
-               <section class="p1" title="Machine Learning">
-                <h1>Machine learning :-</h1>
+               <section class="p1" title="Deep learning & Machine learning">
+                <h1>Deep learning & Machine learning :-</h1>
                        
                        <div class="main-content">
-                           <h2>Anamoly Detection in Time Series Data of S&P500</h2>
-                           <p>S&P500 index is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the United States. It is one of the most commonly followed equity indices, and many consider it to be one of the best representations of the U.S. stock market</p>
+
+
+                           <div>
+                           <h2>Sentiment Extraction From Twitter review Dataset :</h2>
+                           <p>Sentiment extraction from a text nowadays is quite popular, like from building Q&A chatbots
+                           to identifying  bias related issue (regarding caste,colour etc.) from text.There are many different
+                         models build for this task initially it was Naive Bayes(which just do counting and is not good for sentiment analysis) then now most popular one LSTM.</p>
+                         <p>Dataset comprises of 160,0000 Tweets labeled with 0 and 1 in sense of sentiment related to it , The data is available on <em>Kaggle</em>.To get a better sense of sentiment attached to given tweet GloVe is used which gives us a Embedding Matrix for different words representation in higher dimensions.A Sequential model of LSTM network with Convolutions is trained on given dataset.
+                          <p>Training on whole(160,0000 tweets)dataset takes a long time on my laptop because of not so 
+                          good spec.<em> :( </em>,so i trained it on 500,000 tweets and used a validation set of 5000 examples and it acheives nearly 77% accuracy on validation set. We can still improve the performance by training on a much bigger dataset.</p>
+                      
+                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Deep-learning/tree/master/Sentiment%20Extraction%20From%20Twitter%20review%20Dataset" class="link "target="_blank" alt="View on Github">View this project on GitHub</a></p>
+                      </div>   
+
+                        
+                           <h2>Anamoly Detection in Time Series Data of S&P500 :</h2>
+                           <p>S&P500 index is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the United States. It is one of the most commonly followed equity indices, and many consider it to be one of the best representations of the U.S. stock market.</p>
                            
-                           <p>As LSTM network is best for time series Data so,this Project trains an LSTM autoencoder using the Keras API with Tensorflow 2 as the backend to detect anomalies (<b>Sudden price changes</b>) in the S&P 500 index</p>
+                           <p>As LSTM network is best for time series Data so,this Project trains an LSTM autoencoder using the Keras API with Tensorflow 2 as the backend to detect anomalies (<b>Sudden price changes</b>) in the S&P 500 index.</p>
                 <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Deep-learning/tree/master/Anomaly%20Detection%20in%20Time%20series%20Data%20of%20S%26P%20500" class="link "target="_blank" alt="View on Github">View this project on GitHub</a></p>
                       </div>
+          
                        
-                       
-                    <div>
-                           <h2>Hand-written digit Recognition</h2>
+                           <div>
+                           <h2>Hand-written digit Recognition :</h2>
                            <p>Automated handwritten digit
 recognition is widely used today - from recognizing zip codes (postal codes)
 on mail envelopes to recognizing amounts written on bank checks.A neural network is implemented to recognize handwritten digits using the given training set .The neural
 network will be able to represent complex models that form non-linear hypotheses.</p><p>The backpropagation algorithm
 is used to learn the parameters for the neural network.</p><p>The feedforward propagation and the parameters learned from backpropagation algorithm are used to predict handwritten digits.</p>
-  <p>With lambda=1 and Iterations = 400 
-Network acheives 99.52% accuracy </p>
-                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Machine-Learning/tree/master/Hand-written%20digit%20recognition" class="link "target="_blank" alt="View on Github">view this project on GitHub</a></p>
+  <p>With lambda=1 and Iterations = 400
+Network acheives 99.52% accuracy .</p>
+                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Machine-Learning/tree/master/Hand-written%20digit%20recognition" class="link "target="_blank" alt="View on Github">View this project on GitHub</a></p>
                       </div>
                      <div>
-                           <h2>Spam-Classification</h2>
+                           <h2>Spam-Classification :</h2>
                            <p>Many email services today provide spam filters that are able to classify emails
 into spam and non-spam email with high accuracy. This project will use SVMs to build spam filter.</p><p>Firstly all the emails are preprocessed according to given examples and then suitable normalization steps are taken like:- Lower-casing,Stripping HTML,Normalizing URLs,Word Stemming etc.</p>
        <p>A Vocabulary list is selected by choosing all words which occur at least a 100 times in the spam corpus,
                resulting in a list of words.This list help in extracting features from Email.</p><p>The classifier gets a training accuracy
 of about 99.8% and a test accuracy of about 98.5%.
                              </p>
-                             <p>For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Machine-Learning/tree/master/Spam-Classifier" class="link "target="_blank" alt="View on Github">view this project on GitHub</a></p>
+                             <p>For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Machine-Learning/tree/master/Spam-Classifier" class="link "target="_blank" alt="View on Github">View this project on GitHub</a></p>
                        </div>
                  </section>
 
               <h1>Steganography</h1>
                <section class="p1" title="Image steganography">
                     <div>
-                           <h2>Image Steganography</h2>
+                           <h2>Image Steganography :</h2>
                            <p>Steganography is a technique of hiding secret data within an ordinary non-secret file or message to avoid any detection, the secret data is then
                               extracted at its destination.It can be used to conceal almost any type of digital content including text,image ,video or
                               audio content etc.Here i have done Image steganography i.e. embedding secret message in an image.</p>
                               <p>There are several ways in which this can be done i have used Least significant bit method.Also,to increase the security of
                               message a bit encryption method is also used.</p>
-                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Image-Steganography-using-lsb" class="link "target="_blank" alt="View on Github">view this project on GitHub</a></p>
+                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Image-Steganography-using-lsb" class="link "target="_blank" alt="View on Github">View this project on GitHub</a></p>
                       </div>
                    
                  </section>
@@ -88,18 +103,18 @@ of about 99.8% and a test accuracy of about 98.5%.
                    <h1>Data Structures and Algorithms:-</h1>
                  <section class="p1" title="Data Structures And Algorithms">
  
-               <div><h2>Implementaion of Student Database System </h2>
+               <div><h2>Implementaion of Student Database System : </h2>
                                   <p>Implemented a student database which stores wealth of information about a student–first name,last name,hostel,department,grades etc.The database is heavily loaded each year due to some reasons like: new admissions,updating grades of each student etc.</p>
                                   <p>Hash table implementation is used for this purpose,in this implementation we have to deal with the problem of collisions so this project uses two techniques for collision resolution: Double hashing,Separate chaining using Binary search trees.</p>
                                   <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms/tree/master/Student%20Database%20System" class="link "target="_blank" alt="View on Github">
-                                  view this project on GitHub</a>
+                                  View this project on GitHub</a>
                               </div>
-                      <div><h2>Geometric Graph Data Structure</h2>
+                      <div><h2>Geometric Graph Data Structure :</h2>
                                   <p>Implemented a graph data structure in order to store the triangles, points and edges. A shape is produced from input triangles and different queries are answered regarding the shape produced.</p>
                                   <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms/tree/master/Graph%20Data%20Structure(Geometric)" class="link "target="_blank" alt="View on Github">
-                                  view this project on GitHub</a>
+                                  View this project on GitHub</a>
                               </div>
-                              <p>You can find more Data Structures projects on my Github Repo<a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms" class="link" target="_blank">Github Repo</a></p>
+                              <p>You can find more Data Structures projects on my Github Repo, <a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms" class="link" target="_blank">Github Repo</a></p>
 
                 </section>
              </div>
