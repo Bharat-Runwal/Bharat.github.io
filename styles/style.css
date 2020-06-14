@@ -205,6 +205,23 @@ bottom:15px;
   transform: translateX(-50%);
   display: block;
 }
+
+.contents .header{
+  font-size: 30px;
+}
+.contents .About p{
+  font-size: 15px;
+}
+.contents .p1 h1{
+  font-size: 25px;
+}
+
+.contents .p1 h2{
+  font-size: 22px;
+}
+.contents .p1 p{
+  font-size: 18px;
+}
 }
 
 @media screen and (max-width: 400px) {
