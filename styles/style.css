@@ -213,7 +213,13 @@ bottom:15px;
   transform: translateX(-50%);
   display: block;
 }
+#anomaly{
+  width: 450px;
+  height: 250px;
+  display:block;
+  margin: 10px auto;
 
+}
 .contents .header{
   font-size: 30px;
 }
