@@ -64,7 +64,7 @@ html * {
  
  .sidebar .social_media{
   position: relative;
-  bottom: -250px;
+  bottom: -236px;
   left: 50%;
 
   transform: translateX(-50%);
