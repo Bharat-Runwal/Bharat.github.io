@@ -21,9 +21,9 @@
     <div class="sidebar">
         <h2>Bharat Runwal</h2>
         <ul>
-           <li><a href="index.html" style="text-decoration: none;"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="projects.html" style="text-decoration: none;"><i class="fas fa-project-diagram"></i>Projects</a></li>
-               <li><a href="Interests and Hobbies.html" style="text-decoration: none;"><i class="fas fa-feather-alt"></i>Interests and Hobbies</a></li>
+           <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="projects.html"><i class="fas fa-project-diagram"></i>Projects</a></li>
+               <li><a href="Interests and Hobbies.html"><i class="fas fa-feather-alt"></i>Interests and Hobbies</a></li>
         </ul> 
               <div class="PER"><p>Contact Me @:-</p></div>
         <div class="social_media">
@@ -36,54 +36,83 @@
     </div>
           <div class="contents">
                 <div class="header">Projects</div>
-               <section class="p1" title="Deep learning & Machine learning">
-                <h1>Deep learning & Machine learning :-</h1>
-                       
-                       <div class="main-content">
-                          <div>
+                         
+              <div id ="grad">
+              
+
+
+               <section class="p11" title="Deep learning & Machine learning">
+               <!--  <h1>Deep learning & Machine learning :-</h1> -->
+     
+             <div class="main-content">
+
+                       <div class='js'>
                            <h2>Image Captioning :</h2>
-                         <p>An image to caption model which can predict caption for real world images.Model architecture is a CNN encoder and RNN Decoder.Pretrained InceptionV3 is used for CNN Encoder and its last hidden layer
+                           <p>An image to caption model which can predict caption for real world images.Model architecture is a CNN encoder and RNN Decoder.</p>
+                           <div class='set'>
+                         <p>Pretrained InceptionV3 is used for CNN Encoder and its last hidden layer
                                   is used as Embedding.</p>
                                          <img src="images/img.png" alt="Image Captioning" id="anomaly">
                                   <p>We use image features as an initial state of RNN.During Training,ground truth tokens are fed into lstm to get prediction for next token.<p>
                 <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Deep-learning/tree/master/Image%20Captioning" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">View this project on GitHub</a></p>
                       </div>   
+                    </div>
 
-                               
-                        <div>
-                           <h2>Anamoly Detection in Time Series Data of S&P500 :</h2>
+
+                        <div class='js'>
+
+                             <h2>Anamoly Detection in Time Series Data of S&P500 :</h2>
+                             <p>This project is Anomaly detection in closing prices of S&P500 time series data using LSTM autoencoder. </p>
+                             <div class= 'set'>
                            <p>S&P500 index is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the United States. It is one of the most commonly followed equity indices, and many consider it to be one of the best representations of the U.S. stock market.The time series data looks like(From Google):- </p>
-                                                          <img src="images/newplot.png" alt="Image of S&P500 Data" id="anomaly">
-                           <p>Time series Data obtained is broken down into time-steps and fed to the network,this Project trains an LSTM autoencoder using the Keras API with Tensorflow 2 as the backend to detect anomalies (<b>Sudden price changes</b>) in the S&P 500 index.</p>
-                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Deep-learning/tree/master/Anomaly%20Detection%20in%20Time%20series%20Data%20of%20S%26P%20500" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">View this project on GitHub</a></p>
-                      </div>
-          
-                            <div>
+                           <img src="images/newplot.png" alt="Image of S&P500 Data" id="anomaly">
+                           <p>As LSTM network is best for time series Data so,this Project trains an LSTM autoencoder using the Keras API with Tensorflow 2 as the backend to detect anomalies (<b>Sudden price changes</b>) in the S&P 500 index.</p>
+                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Deep-learning/tree/master/Anomaly%20Detection%20in%20Time%20series%20Data%20of%20S%26P%20500" class="link "target="_blank" alt="View on Github">View this project on GitHub</a></p>
+
+
+                  </div>
+                            </div>
+
+
+
+
+
+
+                           <div class="js">
                            <h2>Face Generation using GAN:</h2>
+
+                           <div class="set">
                            <p>We use two Networks here one is Generator which takes random noize for inspiration and tries to generate a face sample.</p> <p>Second is Discriminator which takes a face sample and tries to tell if it's real or fake. i.e it predicts the probability of input image being a real face. </p>
                                                           <img src="images/captions.png" alt="Generated faces" id="anomaly">
                            <p>During Training we train the disciminator to distinguish between real data and the data generated from Generator and then train the generator to make discriminator think that generated data is real(Fool the discriminator) and this process is iterated.There is snippet of generated faces from trained model above after training for 15k iterations.</p>
                 <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Deep-learning/tree/master/GAN(Face%20generation)" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">View this project on GitHub</a></p>
                       </div>
-          
-                               
-                               
-                               
-                               
-                           <div>
+                </div>
+
+
+
+                 <div class='js'>
                            <h2>Sentiment Extraction From Twitter review Dataset :</h2>
+                           <p> Classifying Sentiment related to a tweet to Positive or Negative.</p> 
+                           <div class='set'>
                            <p>Sentiment extraction from a text nowadays is quite popular, like from building Q&A chatbots
                            to identifying  bias related issue (regarding caste,colour etc.) from text.There are many different
                          models build for this task initially it was Naive Bayes(which just do counting and is not good for sentiment analysis) then now most popular one LSTM.</p>
                          <p>Dataset comprises of 160,0000 Tweets labeled with 0 and 1 in sense of sentiment related to it , The data is available on <em>Kaggle</em>.To get a better sense of sentiment attached to given tweet GloVe is used which gives us a Embedding Matrix for different words representation in higher dimensions.A Sequential model of LSTM network with Convolutions is trained on given dataset.
                           <p>Training on whole(160,0000 tweets)dataset takes a long time on my laptop because of not so 
-                          good spec.<em> :( </em>,so i trained it on 500,000 tweets and used a validation set of 5000 examples and it acheives nearly 77% accuracy on validation set. We can still improve the performance by training on a much bigger dataset as one of the problem is some overfitting here.</p>
+                          good spec.<em> :( </em>,so i trained it on 500,000 tweets and used a validation set of 5000 examples and it acheives nearly 77% accuracy on validation set. We can still improve the performance by training on a much bigger dataset.</p>
                       
-                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Deep-learning/tree/master/Sentiment%20Extraction%20From%20Twitter%20review%20Dataset" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">View this project on GitHub</a></p>
+                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Deep-learning/tree/master/Sentiment%20Extraction%20From%20Twitter%20review%20Dataset" class="link "target="_blank" alt="View on Github">View this project on GitHub</a></p>
                       </div>   
-                               
-                           <div>
+                    </div>
+
+
+
+
+
+                                  <div class="js">
                            <h2>Fake News Detection:</h2>
+                           <div class="set">
                            <p>Fake news is growing day by day and there is a need of a way to differentiate between fake and real news.The Dataset is from kaggle which contains articles of fake and real news.</p>
                                <p>Preprocessing is done on the text like scrapping html tags,padding,removing stopwords.Glove(100d) Vector representation of words to capture better relation between words.Model architecture comprises of two stacked LSTM layers.</p>
 
@@ -92,68 +121,93 @@
                       
                 <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Deep-learning/tree/master/Fake%20news%20Detection" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">View this project on GitHub</a></p>
                       </div>   
-                               
-           
-                               
-                               
+                    </div>
 
-                       
-<!--                            <div>
-                           <h2>Hand-written digit Recognition :</h2>
-                           <p>Automated handwritten digit
-recognition is widely used today - from recognizing zip codes (postal codes)
-on mail envelopes to recognizing amounts written on bank checks.A neural network is implemented to recognize handwritten digits using the given training set .The neural
-network will be able to represent complex models that form non-linear hypotheses.</p><p>The backpropagation algorithm
-is used to learn the parameters for the neural network.</p><p>The feedforward propagation and the parameters learned from backpropagation algorithm are used to predict handwritten digits.</p>
-  <p>With lambda=1 and Iterations = 400
-Network acheives 99.52% accuracy .</p>
-                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Machine-Learning/tree/master/Hand-written%20digit%20recognition" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">View this project on GitHub</a></p>
-                      </div> -->
-                     <div>
+
+
+
+
+                 
+                   
+
+
+
+<!--                      <div class="js">
                            <h2>Spam-Classification :</h2>
+                           <div class='set'>
                            <p>Many email services today provide spam filters that are able to classify emails
 into spam and non-spam email with high accuracy. This project will use SVMs to build spam filter.</p><p>Firstly all the emails are preprocessed according to given examples and then suitable normalization steps are taken like:- Lower-casing,Stripping HTML,Normalizing URLs,Word Stemming etc.</p>
        <p>A Vocabulary list is selected by choosing all words which occur at least a 100 times in the spam corpus,
-               resulting in a list of words.This list help in extracting features from Email.</p>
-                             <p>For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Machine-Learning/tree/master/Spam-Classifier" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">View this project on GitHub</a></p>
+               resulting in a list of words.This list help in extracting features from Email.</p><p>The classifier gets a training accuracy
+of about 99.8% and a test accuracy of about 98.5%.
+                             </p>
+                             <p>For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Machine-Learning/tree/master/Spam-Classifier" class="link "target="_blank" alt="View on Github">View this project on GitHub</a></p>
                        </div>
-                 </section>
+                     </div>
+ -->
 
-              <h1>Steganography</h1>
-               <section class="p1" title="Image steganography">
-                    <div>
+                <section class="p11" title="Image steganography">
+                    <div class='js'>
+
+
+
                            <h2>Image Steganography :</h2>
+                           <p>Embedding a secret message into an image using steganography.</p>
+                           <div class = 'set'>
                            <p>Steganography is a technique of hiding secret data within an ordinary non-secret file or message to avoid any detection, the secret data is then
                               extracted at its destination.It can be used to conceal almost any type of digital content including text,image ,video or
                               audio content etc.Here i have done Image steganography i.e. embedding secret message in an image.</p>
                               <p>There are several ways in which this can be done i have used Least significant bit method.Also,to increase the security of
                               message a bit encryption method is also used.</p>
-                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Image-Steganography-using-lsb" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">View this project on GitHub</a></p>
+                <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Image-Steganography-using-lsb" class="link "target="_blank" alt="View on Github">View this project on GitHub</a></p>
                       </div>
-                   
+                   </div>
                  </section>
 
-                   <h1>Data Structures and Algorithms:-</h1>
-                 <section class="p1" title="Data Structures And Algorithms">
+<p> You can find more projects on my github. </p>
+
+
+
+
+
+                <!--   <h1>Data Structures and Algorithms:-</h1> --> 
+  <!--                <section class="p11" title="Data Structures And Algorithms">
  
-               <div><h2>Implementaion of Student Database System : </h2>
+               <div class='js'>
+                <h2>Implementaion of Student Database System : </h2>
+                <div class='set'>
                                   <p>Implemented a student database which stores wealth of information about a student–first name,last name,hostel,department,grades etc.The database is heavily loaded each year due to some reasons like: new admissions,updating grades of each student etc.</p>
                                   <p>Hash table implementation is used for this purpose,in this implementation we have to deal with the problem of collisions so this project uses two techniques for collision resolution: Double hashing,Separate chaining using Binary search trees.</p>
-                                  <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms/tree/master/Student%20Database%20System" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">
+                                  <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms/tree/master/Student%20Database%20System" class="link "target="_blank" alt="View on Github">
                                   View this project on GitHub</a>
                               </div>
-                      <div><h2>Geometric Graph Data Structure :</h2>
+                            </div>
+                      <div class ='js'><h2>Geometric Graph Data Structure :</h2>
+                        <div class='set'>
                                   <p>Implemented a graph data structure in order to store the triangles, points and edges. A shape is produced from input triangles and different queries are answered regarding the shape produced.</p>
-                                  <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms/tree/master/Graph%20Data%20Structure(Geometric)" class="link "target="_blank" alt="View on Github" style="text-decoration: none;">
+                                  <p> For implementation and documentation,<a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms/tree/master/Graph%20Data%20Structure(Geometric)" class="link "target="_blank" alt="View on Github">
                                   View this project on GitHub</a>
-                              </div>
-                              <p>You can find more Data Structures projects on my Github Repo, <a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms" class="link" target="_blank" style="text-decoration: none;">Github Repo</a></p>
+                              
 
+                              <p>You can find more Data Structures projects on my Github Repo, <a href="https://github.com/Bharat-Runwal/Data-Structures-and-Algorithms" class="link" target="_blank">Github Repo</a></p>
+                              </div>
+                            </div>
                 </section>
+
+ -->
+
+
+
+
+
+              </div>
+
+
+
              </div>
 
   </div>
-           
+            <script src="scripts/projects.js"></script>
                   </body>
            </html> 
                              
